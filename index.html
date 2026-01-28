@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PsikoSez | Client Workspace</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div class="brand">
+          <span class="brand-mark">PsikoSez</span>
+          <span class="brand-subtitle">Client-Centered Clinical Workspace</span>
+        </div>
+        <div class="header-actions">
+          <button class="primary" id="addNewButton" type="button">Add New</button>
+          <div class="add-new-menu" id="addNewMenu" aria-hidden="true">
+            <button type="button">New session</button>
+            <button type="button">New clinical note (outside session)</button>
+            <button type="button">New theme / belief</button>
+            <button type="button">New ABC example</button>
+            <button type="button">New assignment</button>
+            <button type="button">New therapist reflection</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="session-preview">
+        <div class="card">
+          <div class="card-header">
+            <h2>Session Preview</h2>
+            <span class="status-pill">Always Visible</span>
+          </div>
+          <div class="preview-grid">
+            <div>
+              <p class="label">Where we left off</p>
+              <p class="value">Explored family triggers and grounding rituals.</p>
+            </div>
+            <div>
+              <p class="label">Critical moment</p>
+              <p class="value">“When I felt invisible at dinner.”</p>
+            </div>
+            <div>
+              <p class="label">Current formulation</p>
+              <p class="value">Hypervigilance linked to rejection sensitivity.</p>
+            </div>
+            <div>
+              <p class="label">Dynamic core / unconscious organizer</p>
+              <p class="value">“I must anticipate harm to stay safe.”</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main class="workspace-grid">
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Client Profile</h3>
+            <button class="ghost" type="button">Edit</button>
+          </div>
+          <div class="panel-content">
+            <div class="profile-item">
+              <p class="label">Client code / alias</p>
+              <p class="value">CL-042 / “River”</p>
+            </div>
+            <div class="profile-item">
+              <p class="label">Background snapshot</p>
+              <p class="value">30, immigrant, recent career transition, history of panic.</p>
+            </div>
+            <div class="profile-item">
+              <p class="label">Intake forms</p>
+              <p class="value">GAD-7 (moderate), PHQ-9 (mild)</p>
+            </div>
+            <div class="profile-item">
+              <p class="label">Emergency contacts</p>
+              <p class="value">Partner (A.), sister (L.)</p>
+            </div>
+            <div class="profile-item">
+              <p class="label">Administrative data</p>
+              <p class="value">Consent signed · Telehealth preference</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Sessions Timeline</h3>
+            <button class="ghost" type="button">View all</button>
+          </div>
+          <div class="panel-content timeline">
+            <article class="timeline-card">
+              <div class="timeline-meta">
+                <span>Session 08 · Apr 14</span>
+                <span class="pill">Critical moment named</span>
+              </div>
+              <h4>From hypervigilance to self-compassion</h4>
+              <ul>
+                <li>Transcript captured, focus on body signals.</li>
+                <li>Therapist notes: paced exposure; slowed the room.</li>
+                <li>Assignment: 3-minute grounding before meetings.</li>
+              </ul>
+            </article>
+            <article class="timeline-card">
+              <div class="timeline-meta">
+                <span>Session 07 · Apr 07</span>
+                <span class="pill">ABC example</span>
+              </div>
+              <h4>Workplace feedback trigger</h4>
+              <ul>
+                <li>Critical moment: “I froze in the hallway.”</li>
+                <li>Freehand note: draw family map.</li>
+                <li>Assignment: thought log after conflict.</li>
+              </ul>
+            </article>
+            <article class="timeline-card">
+              <div class="timeline-meta">
+                <span>Session 06 · Mar 31</span>
+              </div>
+              <h4>Reframing perfectionism</h4>
+              <ul>
+                <li>Belief link: “I must be flawless to be safe.”</li>
+                <li>Therapist notes: gentle challenge, pacing.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel map-panel">
+          <div class="panel-header">
+            <h3>Clinical Map</h3>
+            <div class="map-actions">
+              <button class="ghost" type="button">Zoom -</button>
+              <button class="ghost" type="button">Zoom +</button>
+            </div>
+          </div>
+          <div class="panel-content">
+            <div class="map-canvas">
+              <div class="map-node core">Dynamic Core: “I must anticipate harm.”</div>
+              <div class="map-node">Theme: Safety &amp; control</div>
+              <div class="map-node">Core belief: “I am not protected.”</div>
+              <div class="map-node">Intermediate belief: “If I relax, I will fail.”</div>
+              <div class="map-node">ABC: Meeting feedback → panic → withdrawal</div>
+              <div class="map-node">Socratic Q: “What evidence shows safety?”</div>
+            </div>
+            <p class="helper">Elements can live outside sessions and link across time.</p>
+          </div>
+        </section>
+
+        <section class="panel therapist-panel">
+          <div class="panel-header">
+            <h3>Therapist Panel</h3>
+            <button class="ghost" type="button">Private</button>
+          </div>
+          <div class="panel-content">
+            <div class="reflection-block">
+              <h4>Countertransference</h4>
+              <p>Noticed protective stance; slow down when urgency rises.</p>
+            </div>
+            <div class="reflection-block">
+              <h4>Blind spots</h4>
+              <p>Check for minimization of grief; invite emotional language.</p>
+            </div>
+            <div class="reflection-block">
+              <h4>What worked / didn’t</h4>
+              <ul>
+                <li>Worked: co-regulation breath cues.</li>
+                <li>Didn’t: rapid cognitive reframing.</li>
+              </ul>
+            </div>
+            <div class="reflection-block">
+              <h4>Supervision notes</h4>
+              <p>Review attachment-informed pacing next supervision.</p>
+            </div>
+            <div class="reflection-block assignments-panel">
+              <div class="panel-header small">
+                <h4>Assignments Panel</h4>
+                <button class="ghost" type="button">View log</button>
+              </div>
+              <div class="assignment-card">
+                <p class="label">Grounding ritual</p>
+                <p class="value">Linked to Session 08 · Client feedback: “Felt calmer.”</p>
+              </div>
+              <div class="assignment-card">
+                <p class="label">Thought log</p>
+                <p class="value">Linked to Session 07 · Effectiveness: In progress.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
